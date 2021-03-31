@@ -1,0 +1,63 @@
+<section class="container-fluid position-fixed" style="height: 100%;" id="app-container">
+
+    <section>
+        <div class="text-right mt-4" id="input"></div>
+    </section>
+
+    <section class="keyboard position-absolute container" style="bottom: 0px; background: rgb(24, 23, 23); left: 0px;" >
+        <div class="row my-4">
+            <div class="col-3 text-center single text-primary" id="clear" v-on:click="clear">C</div>
+
+            <div class="col-3 text-center single text-primary" id="element" v-on:click="input_element">/</div>
+
+            <div class="col-3 text-center single text-primary" id="element" v-on:click="input_element">*</div>
+
+            <div class="col-3 text-center single" id="backspace" v-on:click="backspace">
+                <svg id="light" enable-background="new 0 0 24 24" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg" fill="#007bff"><g><path d="m16.359 23.01h-8.698c-.133 0-.26-.053-.354-.146l-6.151-6.151c-.094-.094-.146-.221-.146-.354v-8.698c0-.133.053-.26.146-.354l6.151-6.151c.094-.093.221-.146.354-.146h8.698c.133 0 .26.053.354.146l6.15 6.151c.094.094.146.221.146.354v8.698c0 .133-.053.26-.146.354l-6.15 6.151c-.094.094-.221.146-.354.146zm-8.491-1h8.284l5.857-5.858v-8.284l-5.857-5.858h-8.284l-5.858 5.858v8.284z"/></g><g><path d="m8.111 16.389c-.128 0-.256-.049-.354-.146-.195-.195-.195-.512 0-.707l7.777-7.778c.195-.195.512-.195.707 0s.195.512 0 .707l-7.777 7.778c-.097.097-.225.146-.353.146z"/></g><g><path d="m15.889 16.389c-.128 0-.256-.049-.354-.146l-7.777-7.779c-.195-.195-.195-.512 0-.707s.512-.195.707 0l7.777 7.778c.195.195.195.512 0 .707-.097.098-.225.147-.353.147z"/></g></svg>
+
+            </div>
+        </div>
+
+
+        <div class="row my-4">
+            <div class="col-3 text-center single" id="element" v-on:click="input_element">7</div>
+            <div class="col-3 text-center single" id="element" v-on:click="input_element">8</div>
+            <div class="col-3 text-center single" id="element" v-on:click="input_element">9</div>
+            <div class="col-3 text-center single text-primary" id="element" v-on:click="input_element">-</div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col-3 text-center single" id="element" v-on:click="input_element">4</div>
+            <div class="col-3 text-center single" id="element" v-on:click="input_element">5</div>
+            <div class="col-3 text-center single" id="element" v-on:click="input_element">6</div>
+            <div class="col-3 text-center single text-primary" id="element" v-on:click="input_element">+</div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col-3 text-center">
+                <div class="row">
+                    <div class="col-12 my-4 single" id="element" v-on:click="input_element">1</div>
+                    <div class="col-12 single" id="element" v-on:click="input_element">.</div>
+                </div>
+            </div>
+
+            <div class="col-3 text-center">
+                <div class="row">
+                    <div class="col-12 my-4 single" id="element" v-on:click="input_element">2</div>
+                    <div class="col-12 single" id="element" v-on:click="input_element">0</div>
+                </div>
+            </div>
+
+            <div class="col-3 text-center">
+                <div class="row">
+                    <div class="col-12 my-4 single" id="element" v-on:click="input_element">3</div>
+                    <div class="col-12 single" id="element" v-on:click="input_element">%</div>
+                </div>
+            </div>
+
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                    <div class=" bg-primary p-4 rounded"  id="element" v-on:click="calc">=</div>
+            </div>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,12 @@
+section.keyboard{
+    color: white!important ;
+    font-size: 25px!important;
+}
+
+div.single:hover{
+    background-color: grey;
+}
+
+div#input{
+    font-size: 32px;
+}
